@@ -39,7 +39,7 @@ module.exports = {
                       .setLabel('Vote Canidate 2')
                       .setStyle(ButtonStyle.Danger)
                     );
-                    interaction.reply({ embeds: [embed], components: [row] });
+                    interaction.reply({ embeds: [embed], components: [row], ephemeral: true });
                       })
                     })
                     

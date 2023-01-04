@@ -49,6 +49,7 @@ module.exports = {
 								userVote: voteChar
 							})
 								interaction.reply({content: "Your vote has been filed", ephermal: true})
+								interaction.message.delete()
 						})
 						
 					})
