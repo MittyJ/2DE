@@ -6,6 +6,13 @@ module.exports = {
 		.setDescription('Guide to all bot commands!')
 		.setDMPermission(false),
 	async execute(interaction) {
-        interaction.reply("This feature is not complete")
+        const embed = new EmbedBuilder()
+            .setTitle("Running Elections:")
+                .addFields(
+                    { name: "/election", value: "Shows information on a certain election"},
+					{ name: "/elections", value: "Shows names of all current elections"},
+					{ name: "/vote", value: "Allows you to vote in a certain election"},
+                    )
+            interaction.reply({embeds: [embed]});
 	},
 };
