@@ -7,7 +7,7 @@ module.exports = {
 		.setDMPermission(false),
 	async execute(interaction) {
         const embed = new EmbedBuilder()
-            .setTitle("Running Elections:")
+            .setTitle("2DE Commands")
                 .addFields(
                     { name: "/election", value: "Shows information on a certain election"},
 					{ name: "/elections", value: "Shows names of all current elections"},
